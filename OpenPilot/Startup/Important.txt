@@ -1,0 +1,13 @@
+Hi, user
+
+Thanks for using OpenPilot
+
+in order to get your code work,
+
+ensure you have installed an os in raspberry pi,
+
+then grab a usb and place the shell script and your compile c++ binary file in the same usb
+
+Thanks.
+
+Sanidhyafeaturist

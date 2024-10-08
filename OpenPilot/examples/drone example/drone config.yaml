@@ -1,0 +1,58 @@
+drone:
+  name: "AutonomousDrone"
+  type: "drone"  # Specific to the drone type
+  version: "1.0"
+
+navigation:
+  gps:
+    enabled: true
+    update_interval: 1.0  # seconds
+  waypoints:
+    - name: "Takeoff Point"
+      latitude: 37.7749
+      longitude: -122.4194
+      altitude: 100  # Altitude in meters
+    - name: "Waypoint 1"
+      latitude: 37.7755
+      longitude: -122.4180
+      altitude: 150
+    - name: "Waypoint 2"
+      latitude: 37.7760
+      longitude: -122.4170
+      altitude: 200
+    - name: "Landing Point"
+      latitude: 37.7770
+      longitude: -122.4160
+      altitude: 0
+
+control:
+  pid:
+    enabled: true
+    parameters:
+      Kp: 1.5
+      Ki: 0.1
+      Kd: 0.1
+  throttle:
+    max: 100.0  # Max throttle percentage
+    min: 0.0    # Min throttle percentage
+
+communication:
+  telemetry:
+    enabled: true
+    server_address: "192.168.1.40"
+    server_port: 8082
+  remote_control:
+    enabled: true
+    control_port: 9092
+
+sensors:
+  lidar:
+    enabled: true
+    range: 30.0  # meters
+  camera:
+    enabled: true
+    resolution: "1920x1080"
+
+logging:
+  level: "INFO"  # Options: DEBUG, INFO, WARN, ERROR
+  file: "autonomous_drone.log"

@@ -1,0 +1,56 @@
+car:
+  name: "AutonomousCar"
+  type: "car"  # Specific to the car type
+  version: "1.0"
+
+navigation:
+  gps:
+    enabled: true
+    update_interval: 0.5  # seconds
+  waypoints:
+    - name: "Start Point"
+      latitude: 37.7749
+      longitude: -122.4194
+    - name: "Intersection 1"
+      latitude: 37.7755
+      longitude: -122.4180
+    - name: "Park"
+      latitude: 37.7760
+      longitude: -122.4170
+    - name: "Destination"
+      latitude: 37.7770
+      longitude: -122.4160
+
+control:
+  pid:
+    enabled: true
+    parameters:
+      Kp: 1.0
+      Ki: 0.1
+      Kd: 0.05
+  steering:
+    max_angle: 30.0  # Max steering angle in degrees
+  throttle:
+    max: 100.0  # Max throttle percentage
+    min: 0.0    # Min throttle percentage
+
+communication:
+  telemetry:
+    enabled: true
+    server_address: "192.168.1.30"
+    server_port: 8081
+  remote_control:
+    enabled: true
+    control_port: 9091
+
+sensors:
+  lidar:
+    enabled: true
+    range: 50.0  # meters
+  camera:
+    enabled: true
+    resolution: "1280x720"
+
+logging:
+  level: "INFO"  # Options: DEBUG, INFO, WARN, ERROR
+  file: "autonomous_car.log"

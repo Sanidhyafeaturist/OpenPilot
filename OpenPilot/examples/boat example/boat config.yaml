@@ -1,0 +1,54 @@
+boat:
+  name: "AutonomousBoat"
+  type: "boat"  # Specific to the boat type
+  version: "1.0"
+
+navigation:
+  gps:
+    enabled: true
+    update_interval: 1.0  # seconds
+  waypoints:
+    - name: "Harbor"
+      latitude: 37.7749
+      longitude: -122.4194
+    - name: "Island"
+      latitude: 37.7750
+      longitude: -122.4180
+    - name: "Lighthouse"
+      latitude: 37.7760
+      longitude: -122.4170
+    - name: "End Dock"
+      latitude: 37.7770
+      longitude: -122.4160
+
+control:
+  pid:
+    enabled: true
+    parameters:
+      Kp: 1.2
+      Ki: 0.1
+      Kd: 0.05
+  throttle:
+    max: 100.0  # Max throttle percentage
+    min: 0.0    # Min throttle percentage
+
+communication:
+  telemetry:
+    enabled: true
+    server_address: "192.168.1.20"
+    server_port: 8080
+  remote_control:
+    enabled: true
+    control_port: 9090
+
+sensors:
+  sonar:
+    enabled: true
+    range: 20.0  # meters
+  camera:
+    enabled: true
+    resolution: "1280x720"
+
+logging:
+  level: "INFO"  # Options: DEBUG, INFO, WARN, ERROR
+  file: "autonomous_boat.log"
