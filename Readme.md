@@ -62,11 +62,11 @@ To compile the code ensure you have g++ installed:
 g++ yourfile.cpp -o youroutputfile.bin
 ```
 
-###Executing the code:
+### Executing the code:
 
 now, place the output code on an usb and the activator script from startup folder and place them on the same usb.
 then connect the usb to raspberry pi.
 
-###Contribution
+### Contribution
 Contributions are welcomed, But Be very sure to submit quality code only. Refer to Code Of conduct for more details.
 
