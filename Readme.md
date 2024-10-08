@@ -1,4 +1,4 @@
-# Autopilot Framework for Toy Cars, Drones, and Boats
+# OpenPilot
 
 ## Description
 This autopilot framework is designed for controlling toy cars, drones, and boats. It integrates various sensors, communication modules, and control algorithms to provide autonomous navigation and operation. The framework is modular, allowing for easy expansion and customization through plugins.
