@@ -112,6 +112,11 @@ individual, or aggression toward or disparagement of classes of individuals.
 **Consequence**: A permanent ban from any sort of public interaction within
 the community.
 
+## Also to note:
+
+Every contributer is welcomed to OpenPilot Community. But If any contributer beleives in quantity over quality, we will unfortunately remove them, after continues 3 times of submiting bad code, it will result in a ban. :) 
+
+
 ## Attribution
 
 This Code of Conduct is adapted from the [Contributor Covenant][homepage],
