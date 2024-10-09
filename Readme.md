@@ -23,7 +23,7 @@ This autopilot framework is designed for controlling toy cars, drones, and boats
  Clone the repository:
    ```bash
    git clone https://github.com/Sanidhyafeaturist/OpenPilot.git
-   cd yourproject
+   cd OpenPilot
 ```
 
 ## Usage
