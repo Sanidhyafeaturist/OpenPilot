@@ -15,7 +15,7 @@ set(SOURCES
 
 # Specify the header files
 set(HEADERS
-    includes/OpenPilot.h # Add your header files here
+    OpenPilot.h # Add your header files here
 )
 
 # Create the executable
