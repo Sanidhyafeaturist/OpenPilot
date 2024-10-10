@@ -1,9 +1,9 @@
 #include <iostream>
 #include <thread>
 #include <vector>
-#include "gps_sensor.cpp"   // Include GPS sensor implementation
-#include "lidar_sensor.cpp" // Include LiDAR sensor implementation
-#include "camera_sensor.cpp" // Include Camera sensor implementation
+#include "OpenPilot/sensors/gps sensor.cpp"   // Include GPS sensor implementation
+#include "OpenPilot/sensors/lidar_sensor.cpp" // Include LiDAR sensor implementation
+#include "OpenPilot/sensors/camera sensor.cpp" // Include Camera sensor implementation
 
 void runGPSSensor() {
     GPSSensor gpsSensor("/dev/ttyUSB0"); // Adjust the port as necessary
