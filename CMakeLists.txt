@@ -27,6 +27,4 @@ target_include_directories(MyExecutable PRIVATE include)
 # Optionally add libraries
 # target_link_libraries(MyExecutable PRIVATE some_library)  # Uncomment and modify as needed
 
-# Enable testing (if you have tests)
-enable_testing()
-add_subdirectory(tests)  # Assumes you have a tests directory with its own CMakeLists.txt
+
