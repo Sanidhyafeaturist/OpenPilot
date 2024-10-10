@@ -19,6 +19,9 @@ jobs:
       with:
         cmake-version: '3.19.0'  # Specify the version you need
 
+    - name: List directory contents
+      run: dir  # Use 'dir' for Windows to see the files
+
     - name: Configure
       run: cmake -S . -B build
 
