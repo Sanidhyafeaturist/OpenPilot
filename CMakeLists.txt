@@ -10,7 +10,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # Specify the source files
 set(SOURCES
-    src/main.cpp
+    main.cpp
 )
 
 # Specify the header files
