@@ -14,13 +14,13 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Setup CMake
-      uses: jwlawson/actions-setup-cmake@v1
-      with:
-        cmake-version: '3.19.0'  # Specify the version you need
+    - name: Install MinGW
+      run: |
+        choco install mingw --version=8.1.0 -y  # Install MinGW via Chocolatey
+        echo "PATH=$(choco info mingw --output json | jq -r .installed | tr -d '\n' | sed 's/\\/\//g')" >> $GITHUB_ENV  # Update PATH
 
     - name: Configure
-      run: cmake -S . -B build -G "Visual Studio 16 2019"  # Change to your desired version
+      run: cmake -S . -B build -G "MinGW Makefiles"  # Use MinGW Makefiles for g++
 
     - name: Build
       run: cmake --build build
