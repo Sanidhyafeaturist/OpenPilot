@@ -2,7 +2,6 @@
 #include <vector>
 #include <string>
 #include <cstring>
-#include <serial/serial.h> // Ensure you have a serial library, like `serial`
 
 class LidarSensor {
 public:
