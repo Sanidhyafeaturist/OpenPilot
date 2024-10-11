@@ -2,7 +2,7 @@
 #include <string>
 #include <sstream>
 #include <vector>
-#include <serial.h> // Ensure you have a serial library, like `serial`
+
 
 class GPSSensor {
 public:
