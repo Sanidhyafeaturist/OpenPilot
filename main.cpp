@@ -2,7 +2,7 @@
 #include <thread>
 #include <vector>
 #include "OpenPilot/sensors/gps sensor.cpp"   // Include GPS sensor implementation
-#include "OpenPilot/sensors/lidar_sensor.cpp" // Include LiDAR sensor implementation
+#include "OpenPilot/sensors/lidar sensor.cpp" // Include LiDAR sensor implementation
 #include "OpenPilot/sensors/camera sensor.cpp" // Include Camera sensor implementation
 
 void runGPSSensor() {
