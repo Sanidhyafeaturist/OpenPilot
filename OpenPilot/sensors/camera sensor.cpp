@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "opencvlib/include/opencv2/opencv.hpp" // Make sure to link OpenCV in your project
+#include "opencvlib/opencv.hpp" 
 
 class CameraSensor {
 public:
