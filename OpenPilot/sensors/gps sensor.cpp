@@ -2,14 +2,13 @@
 #include <string>
 #include <sstream>
 #include <vector>
-
+#include <thread>
+#include <chrono>
+#include <serial/include/serial/serial.h> // Include the serial library header
 
 class GPSSensor {
 public:
-    GPSSensor(const std::string& port) : portName(port), serialPort(port) {
-        serialPort.setBaudrate(9600);
-        serialPort.setPort(portName);
-        serialPort.open();
+    GPSSensor(const std::string& port) : portName(port), serialPort(portName, 9600, serial::Timeout::simpleTimeout(1000)) {
         if (!serialPort.isOpen()) {
             std::cerr << "Error: Could not open GPS port: " << portName << std::endl;
             exit(EXIT_FAILURE);
