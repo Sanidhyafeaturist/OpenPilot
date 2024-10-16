@@ -3,7 +3,7 @@
 #include <vector>
 #include "OpenPilot/sensors/gps sensor.cpp"   // Include GPS sensor implementation
 #include "OpenPilot/sensors/lidar sensor.cpp" // Include LiDAR sensor implementation
-#include "OpenPilot/sensors/camera sensor.cpp" // Include Camera sensor implementation
+
 
 void runGPSSensor() {
     GPSSensor gpsSensor("/dev/ttyUSB0"); // Adjust the port as necessary
@@ -31,18 +31,15 @@ void runLidarSensor() {
     }
 }
 
-void runCameraSensor() {
-    load_camera_sensor(); // Assuming camera sensor code has a function to load and process images
-}
+
 
 int main() {
     std::thread gpsThread(runGPSSensor);
     std::thread lidarThread(runLidarSensor);
-    std::thread cameraThread(runCameraSensor);
-
+   
     gpsThread.join();
     lidarThread.join();
-    cameraThread.join();
+
 
     return 0;
 }
