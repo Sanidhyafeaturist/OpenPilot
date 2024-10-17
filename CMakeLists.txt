@@ -15,10 +15,6 @@ set(HEADERS
     serial.h           # Adjust this path
 )
 
-set(SERIAL_SOURCES
-    serial.cc  # Adjust this path to your serial library implementation
-)
-
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 
 add_executable(OpenPilot ${SOURCES} ${SERIAL_SOURCES})
