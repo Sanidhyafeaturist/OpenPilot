@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 set(SOURCES
     main.cpp
-    serial.cpp  # Adjust to your actual path
+    serial.cc  # Adjust to your actual path
 )
 
 set(HEADERS
@@ -16,7 +16,7 @@ set(HEADERS
 )
 
 set(SERIAL_SOURCES
-    serial.cpp  # Adjust this path to your serial library implementation
+    serial.cc  # Adjust this path to your serial library implementation
 )
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
