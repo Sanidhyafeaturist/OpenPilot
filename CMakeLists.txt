@@ -22,6 +22,6 @@ set(HEADERS
 
 # Add the serial source files (if you have them)
 set(SERIAL_SOURCES
-    serial.cpp # Adjust this path to your serial library implementation
+    serial.cc # Adjust this path to your serial library implementation
 )
 
