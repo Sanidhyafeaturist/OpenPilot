@@ -1,0 +1,3 @@
+C:/Users/DELL/Desktop/OpenPilot/OpenPilot/sensors/seriallib/build/CMakeFiles/serial.dir
+C:/Users/DELL/Desktop/OpenPilot/OpenPilot/sensors/seriallib/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/DELL/Desktop/OpenPilot/OpenPilot/sensors/seriallib/build/CMakeFiles/ZERO_CHECK.dir

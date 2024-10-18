@@ -1,0 +1,10 @@
+^C:\USERS\DELL\DESKTOP\OPENPILOT\OPENPILOT\SENSORS\SERIALLIB\CMAKELISTS.TXT
+setlocal
+H:\bin\cmake.exe -SC:/Users/DELL/Desktop/OpenPilot/OpenPilot/sensors/seriallib -BC:/Users/DELL/Desktop/OpenPilot/OpenPilot/sensors/seriallib/build --check-stamp-file C:/Users/DELL/Desktop/OpenPilot/OpenPilot/sensors/seriallib/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
